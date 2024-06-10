@@ -1,0 +1,110 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+    
+#pontuacao {
+    position: absolute; /* Define a posição absoluta em relação ao contêiner pai */
+    top: 100px; /* Distância do topo */
+    right: 490px; /* Distância da direita */
+    background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo semi-transparente */
+    padding: 5px 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#start_screen, #credits_screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#initial_image{
+    display: flex;
+    align-items: center;
+    margin-top: -160px;
+    height: 550px;
+    width: 550px;
+}
+#credits_image{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    height: 550px;
+    width: 550px;
+}
+#start_button:hover{
+    background-color:darkturquoise;
+}
+#start_button {
+    margin-left: -400px;
+    margin-top: -6cm;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 10px;
+    background-color:lightseagreen;
+    color:black;
+    border:0cap;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#credits_button:hover{
+    background-color: darkturquoise;
+}
+#credits_button, #black_button{
+    margin-left: -10cm;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 10px;
+    background-color:lightseagreen;
+    color:black;
+    border:0cap;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.hide {
+    display: none !important;
+}
+
+#canvas {
+    border: 1px solid black;
+}
+
+#skip_button {
+    position: absolute;
+    top: 604px;
+    right: 495px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 1000;
+    background-color:chartreuse;
+    color:black;
+    border:0cap;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#skip_button.hide {
+    display: none;
+}
+#back_button {
+    position: absolute;
+    top: 650px;
+    right: 495px;
+    padding: 10px 20px;
+    font-size: 16px;
+    z-index: 1000;
+    background-color:aqua;
+    color:black;
+    border:0cap;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

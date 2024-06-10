@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/imagem de fundo.css">
+    <script src="JS/teclado.js"></script>
+    <script src="JS/perso.js"></script>
+    <script src="JS/colisao.js"></script>
+    
+   
+    <title>Jogo de Imagens</title>
+</head>
+<body>
+    <div id="start_screen">
+        <img id="initial_image" src="imgs/MENU.png" alt="Imagem Inicial">
+        <button id="start_button" onclick="iniciarJogo()">Jogar</button>
+        <button id="credits_button" onclick="mostrarCreditos()">Créditos</button>
+    </div>
+
+    <div id="credits_screen" class="hide">
+        <img id="credits_image" src="imgs/Creditos.png" alt="Imagem de Créditos">
+        <button id="back_button" onclick="voltarParaInicio()">Voltar</button>
+    </div>
+    <audio id="game_audio" src="AUDIO/AUDIOJOGO.mp3.mp3"></audio>
+    <div id="pontuacao" class="hide"> SCORE: 0 </div>
+    <canvas id="canvas" width="547" height="544" class="hide"></canvas>
+    <button id="skip_button" class="hide" onclick="pularAnimacao()">SKIP</button>
+
+    <script src="JS/engine.js"></script>
+    <script src="JS/imagem de fundo.js"></script>
+    
+</body>
+</html>
